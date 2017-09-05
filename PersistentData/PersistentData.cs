@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PersistentData
 {
-    public class Class1
+    public class PersistentData
     {
     }
 }

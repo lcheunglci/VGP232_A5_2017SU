@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Inventory
 {
-    public class Class1
+    public class Inventory
     {
     }
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Character
 {
-    public class Class1
+    public enum Race { Dwarf, Elf, Goblin, Giant, Halfling, Orc, Vampires, Werewolf, Sphinx }
+
+    public class Character
     {
+        int healthPoints;
+        Race race;
     }
 }
