@@ -48,5 +48,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Character\Character.csproj">
+      <Project>{e166f534-ee5c-451a-910d-af072dd6c4c9}</Project>
+      <Name>Character</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inventory\Inventory.csproj">
+      <Project>{42b1306a-98dc-471a-b93c-d2d7639edc28}</Project>
+      <Name>Inventory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersistentData\PersistentData.csproj">
+      <Project>{dfc58dc3-2fc9-4400-92f1-62291cc5e5bf}</Project>
+      <Name>PersistentData</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
