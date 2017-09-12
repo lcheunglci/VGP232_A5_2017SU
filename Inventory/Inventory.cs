@@ -104,5 +104,13 @@ namespace Inventory
                 MaxStackQtt = 20;
             }
         }
+
+
+
+        public enum LHWeapon { ShortSword, LongSword, BattleAxe, LongBow, ShortBow, Scythe, Dagger }     //Left Hand Weapons
+        public enum RHWeapon { Shield, LongShield, Balestra, LeadPistol, Explosive, Torch }              //Right Hand Weappons
+        public enum Ammo { PistolBullets, ExplosivePack, Arrows }                                    //Ammo count
     }
+
+
 }
