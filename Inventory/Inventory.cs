@@ -9,8 +9,9 @@ namespace Inventory
     public class Inventory
     {
 
-        int XPLevelUnlock;
-        int slots;
+        static int XPLevelUnlock;
+        static int slots;
+        static int maxSlots = 10;
         List<Item> items;
         
         public Inventory(int slots)
@@ -28,24 +29,25 @@ namespace Inventory
             items.Remove(item);
         }
 
-        public bool CheckInventoryFull(int XPLevelUnlock, int maxSlots)
+        public static bool CheckInventoryFull(int XPLevelUnlock, int maxSlots)
         {
+
             switch (XPLevelUnlock)
             {
-                case (XPLevelUnlock < 5):
-                    maxSlots = 15;
+                case 5:
+                    maxSlots += 5;                                     //Slots at 15;
                     break;
-                case (XPLevelUnlock >= 5 && XPLevelUnlock < 10):
-                    maxSlots = 30;
+                case 10:
+                    maxSlots += 5;                                     //Slots at 20
                     break;
-                case (XPLevelUnlock >= 10 && XPLevelUnlock < 15):
-                    maxSlots = 40;
+                case 15:
+                    maxSlots += 5;                                     //Slots at 25
                     break;
-                case (XPLevelUnlock >= 15 && XPLevelUnlock < 20):
-                    maxSlots = 75;
+                case 20:
+                    maxSlots += 5;                                     //Slots at 30
                     break;
-                case (XPLevelUnlock >= 20 && XPLevelUnlock < 30):
-                    maxSlots = 100;
+                case 30:
+                    maxSlots += 10;                                    //Slots at 40
                     break;
 
             }
