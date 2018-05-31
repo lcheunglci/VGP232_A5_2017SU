@@ -29,9 +29,11 @@ namespace Character
         public Character Player
         {
             get { return player; }
-            set {
+            set
+            {
                 Console.WriteLine("Player has been set");
-                player = value; }
+                player = value;
+            }
         }
 
         public void AddEnemy(Character enemy)
@@ -55,7 +57,7 @@ namespace Character
         public void RemoveNPC(Character npc)
         {
             Console.WriteLine("An NPC has been removed");
-            enemies.Remove(player);
+            enemies.Remove(npc);
         }
     }
 }
