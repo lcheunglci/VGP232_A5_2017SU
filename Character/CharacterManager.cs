@@ -22,9 +22,9 @@ namespace Character
 
 #endregion
 
-        Character player;
-        List<Character> npcs = new List<Character>();
-        List<Character> enemies = new List<Character>();
+        public Character player;
+        public List<Character> npcs = new List<Character>();
+        public List<Character> enemies = new List<Character>();
 
         public Character Player
         {
