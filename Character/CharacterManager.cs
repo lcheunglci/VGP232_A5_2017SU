@@ -51,13 +51,13 @@ namespace Character
         public void AddNPC(Character npc)
         {
             Console.WriteLine("An NPC has been added");
-            enemies.Add(npc);
+            npcs.Add(npc);
         }
 
         public void RemoveNPC(Character npc)
         {
             Console.WriteLine("An NPC has been removed");
-            enemies.Remove(npc);
+            npcs.Remove(npc);
         }
     }
 }
