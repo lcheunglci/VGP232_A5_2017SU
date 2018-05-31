@@ -5,7 +5,7 @@ namespace Character
 {
     public class CharacterManager
     {
-#region singleton
+        #region singleton
         private static CharacterManager instance;
 
         public static CharacterManager Instance
@@ -21,10 +21,10 @@ namespace Character
         }
 
 #endregion
-
+        
         Character player;
-        List<Character> npcs = new List<Character>();
-        List<Character> enemies = new List<Character>();
+       public  List<Character> npcs = new List<Character>();
+       public List<Character> enemies = new List<Character>();
 
         public Character Player
         {

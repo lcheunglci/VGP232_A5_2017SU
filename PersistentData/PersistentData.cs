@@ -13,7 +13,9 @@ namespace PersistentData
                 XmlSerializer serializer = new XmlSerializer(typeof(T));
                 using (TextWriter writer = new StreamWriter(path))
                 {
-                    serializer.Serialize(writer, data);
+                    
+                        serializer.Serialize(writer, data);
+                    
                 }
             }
             catch (Exception ex)
