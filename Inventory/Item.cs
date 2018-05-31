@@ -11,9 +11,9 @@ namespace Inventory
 
     public class Item
     {
-        string name;
+        public string name;
         int modifier;
-        ItemType type;
+        public ItemType type;
 
         public Item(string name, int modifier, ItemType type)
         {

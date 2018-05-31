@@ -25,5 +25,13 @@ namespace Inventory
         {
             items.Remove(item);
         }
+
+        public void PrintInventory()
+        {
+            for (int i = 0; i < items.Count; i++)
+            {
+                Console.WriteLine("Inventory.items[{0}]: {1} (Type: {2})", i, items[i].name, items[i].type.ToString());
+            }
+        }
     }
 }
