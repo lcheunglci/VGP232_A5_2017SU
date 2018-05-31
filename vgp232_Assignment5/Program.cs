@@ -24,14 +24,14 @@ namespace vgp232_Assignment5
             if (player == null)
             {
                 Console.WriteLine("No player found, creating new default character");
-                player = new Character.Character(100, Races.Elf, Alignments.Neutral);
+                player = new Character.Character(100, Race.Elf, Alignment.Neutral);
             }
             
 
             CharacterManager characterManager = CharacterManager.Instance;
             characterManager.Player = player;
-            Character.Character enemyOne = new Character.Character(50, Races.Orc, Alignments.ChaoticEvil);
-            Character.Character enemyTwo = new Character.Character(50, Races.Orc, Alignments.NeutralEvil);
+            Character.Character enemyOne = new Character.Character(50, Race.Orc, Alignment.ChaoticEvil);
+            Character.Character enemyTwo = new Character.Character(50, Race.Orc, Alignment.NeutralEvil);
             characterManager.AddEnemy(enemyOne);
             characterManager.AddEnemy(enemyTwo);
 

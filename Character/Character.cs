@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Character
 {
-    public enum Races { Dwarf, Elf, Goblin, Giant, Halfling, Orc, Vampires, Werewolf, Sphinx }
-    public enum Alignments { LawfulGood, LawfulNeutral, LawfulEvil, NeutralGood, Neutral, NeutralEvil, ChaoticGood, ChaoticNeutral, ChaoticEvil }
+    public enum Race { Dwarf, Elf, Goblin, Giant, Halfling, Orc, Vampires, Werewolf, Sphinx }
+    public enum Alignment { LawfulGood, LawfulNeutral, LawfulEvil, NeutralGood, Neutral, NeutralEvil, ChaoticGood, ChaoticNeutral, ChaoticEvil }
 
     public class Character
     {
@@ -16,12 +16,12 @@ namespace Character
             get; set;
         }
 
-        public Races Race
+        public Race Race
         {
             get; set;
         }
 
-        public Alignments Alignment
+        public Alignment Alignment
         {
             get; set;
         }
@@ -31,7 +31,7 @@ namespace Character
 
         }
 
-        public Character(int hp, Races r, Alignments a)
+        public Character(int hp, Race r, Alignment a)
         {
             HealthPoints = hp;
             Race = r;
