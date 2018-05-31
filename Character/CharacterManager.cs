@@ -5,7 +5,7 @@ namespace Character
 {
     public class CharacterManager
     {
-        #region singleton
+#region singleton
         private static CharacterManager instance;
 
         public static CharacterManager Instance
@@ -21,17 +21,19 @@ namespace Character
         }
 
 #endregion
-        
-        Character player;
-       public  List<Character> npcs = new List<Character>();
-       public List<Character> enemies = new List<Character>();
+
+        public Character player;
+        public List<Character> npcs = new List<Character>();
+        public List<Character> enemies = new List<Character>();
 
         public Character Player
         {
             get { return player; }
-            set {
+            set
+            {
                 Console.WriteLine("Player has been set");
-                player = value; }
+                player = value;
+            }
         }
 
         public void AddEnemy(Character enemy)
@@ -49,13 +51,13 @@ namespace Character
         public void AddNPC(Character npc)
         {
             Console.WriteLine("An NPC has been added");
-            enemies.Add(npc);
+            npcs.Add(npc);
         }
 
         public void RemoveNPC(Character npc)
         {
             Console.WriteLine("An NPC has been removed");
-            enemies.Remove(player);
+            npcs.Remove(npc);
         }
     }
 }

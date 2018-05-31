@@ -11,41 +11,25 @@ namespace Character
 
     public class Character
     {
-        public int HealthPoints
-        {
-            get; set;
-        }
-
-        public Race Race
-        {
-            get; set;
-        }
-
-        public Alignment Alignment
-        {
-            get; set;
-        }
-
-        public Character()
-        {
-
-        }
+        int healthPoints;
+        Race race;
+        Alignment alignment;
 
         public Character(int hp, Race r, Alignment a)
         {
-            HealthPoints = hp;
-            Race = r;
-            Alignment = a;
+            healthPoints = hp;
+            race = r;
+            alignment = a;
         }
 
         public void TakeDamage(int damage)
         {
-            HealthPoints -= 1;
+            healthPoints -= damage;
         }
 
         public void RestoreHealth(int amount)
         {
-            HealthPoints += 1;
+            healthPoints += amount;
         }
     }
 }
